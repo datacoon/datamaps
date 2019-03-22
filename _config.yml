@@ -18,7 +18,7 @@ description: Здесь собрана информация о том где м�
 email: infoculture@infoculture.com
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://datacoon.github.io/datamaps/" # the base hostname & protocol for your site, e.g. http://example.com
 
 author: Иван Бегтин
 author_url: https://begtin.tech
