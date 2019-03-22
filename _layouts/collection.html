@@ -1,0 +1,51 @@
+---
+layout: default
+---
+
+<div class="container pt-5"> 
+  <div class="row">
+    <div class="col">
+      <h1>{{page.title}}</h1>
+    </div>
+  </div>
+</div>
+
+<div class="container py-5">
+
+  {% if site.logo.size > 0 %}
+  <div class="row">
+
+    {% assign sortedsections = site.logo | sort: 'title' %}
+    <div class="col-md-7 col-lg-8 col-lg-9 py-4">
+      {% for section in sortedsections %}
+      <div class="section mb-5">
+        {% if section.anchor %}
+        <h2 id="{{section.anchor}}" class="light"><a href="#{{section.anchor}}" class="section-anchor-link">#</a>{{section.title}}</h2>
+        {% else %}
+        <h2>{{section.title}}</h2>
+        {% endif %}
+        {{ section.content | markdownify }}
+      </div>
+      {% endfor %}
+    </div>
+    
+    <div class="d-none d-md-block col-md-4 col-lg-3 col-xl-2 col-md-offset-1">
+      <ul class="section-nav sticky-top list-unstyled py-4">
+        {% for section in sortedsections %}
+        <li class="border-left pl-3 py-1">{% if section.anchor %}<a href="#{{section.anchor}}" class="border-0">{{section.title}}</a>{% else %}{{section.title}}{% endif %}</li>
+        {% endfor %}
+      </ul>
+    </div>
+
+  </div>
+
+  {% else %}
+  <div class="row">
+    <div class="col">
+      Здесь пока пусто
+    </div>
+  </div>
+
+  {% endif %}
+
+</div>

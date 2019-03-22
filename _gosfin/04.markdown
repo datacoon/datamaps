@@ -1,0 +1,13 @@
+---
+layout: post
+permalink: /:collection/regbudget
+
+title: Где узнать информацию о бюджете региона?
+disabled: true
+
+sources:
+  - http://bus.gov.ru​
+  - http://zakupki.gov.ru​
+---
+
+Принципы устройства бюджетной системы разделяют государственные структуры как минимум на два уровня:

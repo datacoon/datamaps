@@ -1,0 +1,13 @@
+---
+layout: post
+permalink: /:collection/science-spending
+
+title: Где найти затраты на научные исследования в России?
+disabled: true
+
+sources:
+  - http://bus.gov.ru​
+  - http://zakupki.gov.ru​
+---
+
+Принципы устройства бюджетной системы разделяют государственные структуры как минимум на два уровня:

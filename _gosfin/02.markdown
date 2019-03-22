@@ -1,0 +1,13 @@
+---
+layout: post
+permalink: /:collection/fedbudget
+
+title: Где узнать о распределении расходов федерального бюджета?
+disabled: true
+
+sources:
+  - http://bus.gov.ru​
+  - http://zakupki.gov.ru​
+---
+
+Принципы устройства бюджетной системы разделяют государственные структуры как минимум на два уровня:

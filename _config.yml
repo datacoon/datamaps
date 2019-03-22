@@ -1,0 +1,98 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Карты данных
+description: Здесь собрана информация о том где можно найти данные различной тематики
+email: infoculture@infoculture.com
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+author: Иван Бегтин
+author_url: https://begtin.tech
+
+company: АНО «Информационная культура»
+company_url: https://infoculture.ru
+company_mail: infoculture@infoculture.ru
+company_phone: +7 499 500 96 58
+
+# twitter_username: tomatoesaurus
+# telegram_username: tomatoesaurus
+# behance_username: mednikov
+# github_username: Mednikov
+# dribbble_username: mednikov
+# linkedin_username: mednikov
+
+collections:
+  gosfin:
+    title: Госфинансы
+    position: 1
+    bg_color: 29a5ff
+    color: fff
+    output: true
+  aviation:
+    title: Авиация РФ
+    position: 2
+    bg_color: 1f589f
+    color: fff
+    disabled: true
+  eco:
+    title: Экология
+    position: 3
+    bg_color: fcf9ec
+    color: 141414
+    disabled: true
+  education:
+    title: Образование
+    position: 4
+    bg_color: c5c7c4
+    color: 141414
+    disabled: true
+  health:
+    title: Здравоохранение
+    position: 5
+    bg_color: fff
+    color: 141414
+    disabled: true
+  law:
+    title: Законотворчество
+    position: 6
+    bg_color: cacdd4
+    color: 141414
+    disabled: true
+  oil:
+    title: Нефть и Газ
+    position: 7
+    bg_color: b8dbf9
+    color: 141414
+    disabled: true
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

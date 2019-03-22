@@ -1,0 +1,13 @@
+---
+layout: post
+permalink: /:collection/municipal
+
+title: Где найти данные о муниципальных бюджетах?
+disabled: true
+
+sources:
+  - http://bus.gov.ru​
+  - http://zakupki.gov.ru​
+---
+
+Принципы устройства бюджетной системы разделяют государственные структуры как минимум на два уровня:

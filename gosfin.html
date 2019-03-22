@@ -1,0 +1,48 @@
+---
+layout: default
+
+title: Госфинансы
+subtitle: Вопросы и ответы про госфинансы
+---
+
+<div class="container py-3">
+  <div class="row">
+    <div class="col-md-8 py-4">
+      <h1 class="mb-4">{{page.title}}</h1>
+      <h4 class="light">{{page.subtitle}}</h4>
+    </div>
+    <div class="col-md-4 py-4 text-md-right">
+      <a href="https://www.infoculture.ru/wp-content/uploads/2018/12/Finance.pdf" class="btn btn-primary" target="_blank">Скачать .pdf</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="container pb-5">
+  
+  {% if site.gosfin.size > 0 %}
+
+    <div class="row">
+      {% assign sortedsections = site.gosfin %}
+      {% for section in sortedsections %}
+      <div class="col col-sm-6 col-md-4 col-lg-3 py-2 mb-3">
+        <a href="{{section.url}}" 
+           class="card square{% if section.disabled %} inactive{% endif %}">
+          <div class="card-content">
+            <h6>{{section.title}}</h6>
+          </div>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+
+  {% else %}
+  <div class="row">
+    <div class="col">
+      Здесь пока пусто
+    </div>
+  </div>
+  {% endif %}
+
+</div>
+

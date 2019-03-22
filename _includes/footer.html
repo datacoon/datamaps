@@ -1,0 +1,23 @@
+<footer class="py-4">
+  <div class="container">
+    <div class="row">
+<!--       <div class="col text-center">
+        © {% if site.author %}{% if site.author_url %}<a href="{{site.author_url}}">{{site.author}}</a>,{% else %}{{site.author}},{% endif %}{% endif %} {{site.time|date:'%Y'}}
+      </div> -->
+      <div class="col-12 col-md-4 mb-4">
+        © {{site.time|date:'%Y'}} {% if site.author %}{% if site.author_url %}<a href="{{site.author_url}}">{{site.author}}</a>{% else %}{{site.author}}{% endif %}{% endif %}
+      </div>
+      <div class="col-12 col-md-4 nowrap text-md-center mb-4">
+        {% if site.company_url %}
+        <a href="{{site.company_url}}" target="_blank" class="logo">
+          <img src="{{site.baseurl}}/img/ik-logo-hor.svg" alt="logo">
+        </a>
+        {% endif %}
+      </div>
+      <div class="col-12 col-md-4 nowrap text-md-right mb-4">
+        <img src="{{site.baseurl}}/img/zero.svg" class="cc" alt=zero">
+        <img src="{{site.baseurl}}/img/cc.svg" class="cc" alt=cc">
+      </div>
+    </div>
+  </div>
+</footer>

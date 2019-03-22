@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<div class="container py-3">
+  <div class="row">
+    <div class="col-lg-6 py-4">
+      <h1 class="mb-4">{{site.title}}</h1>
+      <h4 class="light">{{site.description}}</h4>
+    </div>
+  </div>
+</div>
+
+<div class="container pb-5">
+  <div class="row">
+    {% assign collections = site.collections | sort: 'position' %}
+    {% for collection in collections | remove "pages" %}
+    {% if collection.label != 'posts'  %}
+    <div class="col col-sm-6 col-md-4 col-lg-3 py-2 mb-3">
+      <a href="{{site.baseurl}}{{collection.label}}" 
+         class="card square{% if collection.disabled %} inactive{% endif %}" 
+         style="background-color:#{{collection.bg_color}}; color:#{{collection.color}}; background-image:url('{{site.baseurl}}/img/{{collection.label}}.png')">
+        <div class="card-content">
+          <h5>{{collection.title}}</h5>
+        </div>
+      </a>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
