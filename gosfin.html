@@ -26,7 +26,7 @@ subtitle: Вопросы и ответы про госфинансы
       {% assign sortedsections = site.gosfin %}
       {% for section in sortedsections %}
       <div class="col col-sm-6 col-md-4 col-lg-3 py-2 mb-3">
-        <a href="{{site.baseurl}}{{section.url}}" 
+        <a href="{{site.url}}{{section.url}}" 
            class="card square{% if section.disabled %} inactive{% endif %}">
           <div class="card-content">
             <h6>{{section.title}}</h6>

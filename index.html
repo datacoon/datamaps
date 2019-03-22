@@ -17,9 +17,9 @@ layout: default
     {% for collection in collections | remove "pages" %}
     {% if collection.label != 'posts'  %}
     <div class="col col-sm-6 col-md-4 col-lg-3 py-2 mb-3">
-      <a href="{{site.baseurl}}{{collection.label}}" 
+      <a href="{{site.url}}/{{collection.label}}" 
          class="card square{% if collection.disabled %} inactive{% endif %}" 
-         style="background-color:#{{collection.bg_color}}; color:#{{collection.color}}; background-image:url('{{site.baseurl}}/img/{{collection.label}}.png')">
+         style="background-color:#{{collection.bg_color}}; color:#{{collection.color}}; background-image:url('{{site.url}}/img/{{collection.label}}.png')">
         <div class="card-content">
           <h5>{{collection.title}}</h5>
         </div>
