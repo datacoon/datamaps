@@ -17,7 +17,7 @@ title: Карты данных
 description: Здесь собрана информация о том где можно найти данные различной тематики
 email: infoculture@infoculture.com
 
-baseurl: "datamaps" # the subpath of your site, e.g. /blog
+baseurl: "/datamaps" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 author: Иван Бегтин
