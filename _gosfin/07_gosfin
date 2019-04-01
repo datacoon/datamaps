@@ -3,7 +3,7 @@ layout: post
 permalink: /:collection/gov_07
 
 title: Чего мы еще не знаем о госфинансах?
-disabled: false
+disabled: true
 
 sources:
   - http://bus.gov.ru​
