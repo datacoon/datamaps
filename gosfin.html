@@ -3,6 +3,8 @@ layout: default
 
 title: Госфинансы
 subtitle: Вопросы и ответы про госфинансы
+pdf_link: https://www.infoculture.ru/wp-content/uploads/2018/12/Finance.pdf
+authors: Иван Бегтин
 ---
 
 <div class="container py-3">
@@ -11,9 +13,11 @@ subtitle: Вопросы и ответы про госфинансы
       <h1 class="mb-4">{{page.title}}</h1>
       <h4 class="light">{{page.subtitle}}</h4>
     </div>
+    {% if page.pdf_link %}
     <div class="col-md-4 py-4 text-md-right">
-      <a href="https://www.infoculture.ru/wp-content/uploads/2018/12/Finance.pdf" class="btn btn-primary" target="_blank">Скачать .pdf</a>
+      <a href="{{page.pdf_link}}" class="btn btn-primary" target="_blank">Скачать .pdf</a>
     </div>
+    {% endif %}
   </div>
 </div>
 
@@ -45,4 +49,17 @@ subtitle: Вопросы и ответы про госфинансы
   {% endif %}
 
 </div>
+
+
+{% if page.authors %}
+<div class="container pb-5">
+  <div class="row">
+    <div class="col">
+      {{page.authors}}
+    </div>
+  </div>
+</div>
+{% endif %}
+
+
 

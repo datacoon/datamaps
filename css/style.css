@@ -5,6 +5,7 @@ body{
 	margin-bottom:1em;
 	color: #141414;
 	background-color: #f7f8fd;
+	-webkit-font-smoothing: antialiased;
 }
 
 .brand{
